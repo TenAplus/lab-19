@@ -63,6 +63,11 @@ void Unit::newTurn(){
 	guard_on = false;
 }
 
+bool Unit::isDead(){
+	if(hp<=0) return true;
+	else return false;
+}
+
 void Unit::guard(){
 	guard_on = true;
 }
